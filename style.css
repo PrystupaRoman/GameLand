@@ -56,12 +56,12 @@ nav li a {
 
 
 .intro-title { 
-  transform: translateY(-1.5em); 
   display: flex;
   flex-direction: column;
   align-items: center; 
   justify-content: flex-end;
   margin: 0 auto;
+  margin-bottom: 2em;
 }
 .intro-title h1 {
   font-size: 4em;
