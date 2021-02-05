@@ -110,3 +110,45 @@ nav li a {
   align-items: center;
   justify-content: center;
 }
+
+/* ------- game genre section------ */
+
+.genre-heading {
+  text-align: center;
+  margin: 2em 0;
+  font-size: 3em;
+}
+.genre-wrapper {
+  display: flex;
+  text-align: center;
+}
+.game-genre {
+  border: 1px solid black;
+  /* start from here */
+}
+.game-genre h3 {
+  font-size: 2em;
+  margin: 1em 0;
+}
+.game-genre p {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  margin: 0 1em;
+}
+.game-genre li {
+  margin: 1em 0;
+  list-style: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.game-genre li::before  {
+  content: "\2022";
+  margin: 0 .5em;
+  font-size: 1em;
+  color:#0d508ac9; 
+}
+.game-types img {
+  width: 600px;
+  height: 340px;
+}
