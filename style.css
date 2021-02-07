@@ -124,7 +124,7 @@ nav li a {
 }
 .game-genre {
   border: 1px solid black;
-  /* start from here */
+  margin: 0 1em;
 }
 .game-genre h3 {
   font-size: 2em;
@@ -149,6 +149,18 @@ nav li a {
   color:#0d508ac9; 
 }
 .game-types img {
-  width: 600px;
-  height: 340px;
+  width: 100%;
+  height: auto;
+}
+.btn-genre {
+  text-decoration: none;
+  /* background: rgb(223, 228, 247); */
+  display: inline-block;
+  padding: 1em 3em;
+  box-sizing: border-box;
+  border-radius: .5em;
+  color: #FFF;
+  background: #000;
+  font-weight: bold;
+  margin: .5em 0;
 }
