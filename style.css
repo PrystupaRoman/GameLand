@@ -3,33 +3,39 @@ body {
   box-sizing: border-box;
   /* background-color: #e6e6e6c9; */
 }
+
 * {
   border: 0;
   margin: 0;
   padding: 0;
 }
+
 .banner {
   background-image: url(img/main-wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:  center;
+  background-position: center;
   height: 58em;
+  /* height: 100vh; */
   display: flex;
 }
+
+/* -------header section------- */
 header {
   height: 3em;
   width: 100%;
-  margin-bottom: .5em ;
+  margin-bottom: 1em;
 }
+
 header .container {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   max-width: 1600px;
-  padding: 0 1em;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
- .logo-wrapper a {
+
+.logo-wrapper a {
   display: flex;
   align-items: center;
   color: #000;
@@ -37,16 +43,18 @@ header .container {
   text-transform: uppercase;
   font-size: 2em;
   font-weight: bold;
-} 
- .logo-wrapper img {
+}
+
+.logo-wrapper img {
   width: 2em;
   padding: 0 .5em;
-} 
+}
 
 nav li {
   display: inline-block;
   margin: 0 1.5em;
 }
+
 nav li a {
   text-decoration: none;
   color: #000;
@@ -55,23 +63,26 @@ nav li a {
 }
 
 
-.intro-title { 
+.intro-title {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: flex-end;
   margin: 0 auto;
-  margin-bottom: 2em;
+  margin-bottom: 2.4em;
 }
+
 .intro-title h1 {
   font-size: 4em;
   color: #fff;
 }
+
 .intro-title p {
   font-size: 1.5em;
   padding: 1em 0;
   color: #fff;
 }
+
 .btn-details {
   padding: 1em 3em;
   border-radius: .5em;
@@ -81,18 +92,22 @@ nav li a {
   font-size: 1em;
   text-decoration: none;
 }
+
 .btn-details:hover {
   color: #fff;
 }
+
 
 .learn-more {
   display: flex;
   margin-top: 10em;
 }
+
 .learn-more h2 {
   font-size: 3em;
   text-align: center;
 }
+
 .learn-more p {
   font-size: 1.2em;
   padding: 0 2em;
@@ -104,9 +119,10 @@ nav li a {
   height: auto;
 
 }
+
 .description {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -118,43 +134,50 @@ nav li a {
   margin: 2em 0;
   font-size: 3em;
 }
+
 .genre-wrapper {
   display: flex;
   text-align: center;
 }
+
 .game-genre {
   border: 1px solid black;
   margin: 0 1em;
 }
+
 .game-genre h3 {
   font-size: 2em;
   margin: 1em 0;
 }
+
 .game-genre p {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 1em;
   margin: 0 1em;
 }
+
 .game-genre li {
   margin: 1em 0;
   list-style: none;
   font-size: 1.5em;
   font-weight: bold;
 }
-.game-genre li::before  {
+
+.game-genre li::before {
   content: "\2022";
   margin: 0 .5em;
   font-size: 1em;
-  color:#0d508ac9; 
+  color: #0d508ac9;
 }
+
 .game-types img {
   width: 100%;
   height: auto;
 }
+
 .btn-genre {
   text-decoration: none;
-  /* background: rgb(223, 228, 247); */
   display: inline-block;
   padding: 1em 3em;
   box-sizing: border-box;
@@ -164,3 +187,52 @@ nav li a {
   font-weight: bold;
   margin: .5em 0;
 }
+
+/* ------ img collage section */
+.popular-games h3 {
+  font-size: 2em;
+  text-align: center;
+  margin: 3em auto;
+}
+
+.games-collage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper img {
+  display: block;
+  width: 28em;
+  height: 14em;
+}
+
+.item-overlay {
+  position: absolute;
+  /* background: rgba(29, 106, 154, 0.1); */
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: .2s ease visibility;
+}
+
+.item-overlay a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.img-wrapper:hover .item-overlay {
+  /* visibility: visible; */
+  opacity: 1;
+}
+
+/* не шарю яке зробити  */
