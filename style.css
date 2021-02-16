@@ -97,34 +97,34 @@ nav li a {
   color: #fff;
 }
 
+.intro-section {
+  margin: 15em auto;
+}
 
-.learn-more {
+.block-section {
   display: flex;
-  margin-top: 10em;
 }
 
-.learn-more h2 {
-  font-size: 3em;
-  text-align: center;
-}
-
-.learn-more p {
-  font-size: 1.2em;
-  padding: 0 2em;
-  text-align: center;
-}
-
-.learn-more img {
-  width: 90%;
-  height: auto;
-
-}
-
-.description {
+.text-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  padding: 5em;
+}
+
+.text-wrapper h2 {
+  font-size: 2em;
+  margin: .5em;
+}
+
+.text-wrapper p {
+  font-size: 1.2em;
+  padding: .5em 1em;
+}
+
+.block-section img {
+  width: 50%;
+  height: auto;
 }
 
 /* ------- game genre section------ */
@@ -142,7 +142,7 @@ nav li a {
 
 .game-genre {
   border: 1px solid black;
-  margin: 0 1em;
+  margin: 0 3em;
 }
 
 .game-genre h3 {
@@ -189,6 +189,7 @@ nav li a {
 }
 
 /* ------ img collage section */
+
 .popular-games h3 {
   font-size: 2em;
   text-align: center;
@@ -207,20 +208,25 @@ nav li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .img-wrapper img {
   display: block;
-  width: 28em;
-  height: 14em;
+  width: 28.2em;
+  height: 15em;
 }
 
 .item-overlay {
   position: absolute;
-  /* background: rgba(29, 106, 154, 0.1); */
-  /* visibility: hidden; */
+  /* background: rgba(29, 106, 154, 0.0);  */
+  top: -100%;
   opacity: 0;
-  transition: .2s ease visibility;
+  transition: all ease 1s;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .item-overlay a {
@@ -228,11 +234,10 @@ nav li a {
   text-decoration: none;
   font-size: 1.5em;
   font-weight: bold;
+  display: block;
 }
 
 .img-wrapper:hover .item-overlay {
-  /* visibility: visible; */
   opacity: 1;
+  top: 50%;
 }
-
-/* не шарю яке зробити  */
