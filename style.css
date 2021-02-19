@@ -112,7 +112,7 @@ nav li a {
   padding: 5em;
 }
 
-.text-wrapper h2 {
+.text-wrapper h3 {
   font-size: 2em;
   margin: .5em;
 }
@@ -240,4 +240,56 @@ nav li a {
 .img-wrapper:hover .item-overlay {
   opacity: 1;
   top: 50%;
+}
+
+/* ------ form section ------- */
+
+
+.form-wrapper {
+  display: flex;
+  margin: 10em 0 2em;
+  justify-content: space-evenly;
+ 
+}
+
+.form-content {
+  width: 50%;
+}
+
+.form-title {
+  font-size: 2em;
+  margin-bottom: .5em;
+  font-weight: bold;
+}
+.form-description {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+.form-offer li {
+  list-style: none;
+  font-size: 1.5em;
+  padding: .5em 0;
+}
+
+.form-offer li::before {
+  content: "\2022";
+  margin-right: .5em;
+  font-size: 1em;
+  color: #0d508ac9;
+}
+
+.form-group button {
+  padding: 1.5em 5em;  
+  border: 2px solid #333;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  background:#bbdadc;
+}
+.form-group input {
+  padding: 1.5em 10em;  
+  border: 2px solid #333;  
+  margin: 1em 0;
 }
