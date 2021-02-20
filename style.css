@@ -142,7 +142,7 @@ nav li a {
 
 .game-genre {
   border: 1px solid black;
-  margin: 0 3em;
+  margin: 0 2.5em;
 }
 
 .game-genre h3 {
@@ -186,6 +186,12 @@ nav li a {
   background: #000;
   font-weight: bold;
   margin: .5em 0;
+  transition: background-color .3s linear;  
+}
+.btn-genre:hover {
+  color: #fff;
+  background-color: #5e6469;
+  cursor: pointer;
 }
 
 /* ------ img collage section */
@@ -215,6 +221,7 @@ nav li a {
   display: block;
   width: 28.2em;
   height: 15em;
+  margin: .1em;
 }
 
 .item-overlay {
@@ -240,7 +247,7 @@ nav li a {
 .img-wrapper:hover .item-overlay {
   opacity: 1;
   top: 50%;
-}
+  }
 
 /* ------ form section ------- */
 
@@ -249,7 +256,6 @@ nav li a {
   display: flex;
   margin: 10em 0 2em;
   justify-content: space-evenly;
- 
 }
 
 .form-content {
@@ -279,17 +285,26 @@ nav li a {
   color: #0d508ac9;
 }
 
-.form-group button {
-  padding: 1.5em 5em;  
+.btn-send {
+  padding: 1.2em 11.87em;  
   border: 2px solid #333;
-  width: 100%;
   font-weight: bold;
   font-size: 1em;
   text-transform: uppercase;
-  background:#bbdadc;
+  background:#000;
+  color: #fff;
+  margin-top: .5em;
+  transition: background-color .3s linear;
+}
+.btn-send:hover {
+  color: #fff;
+  background-color: #5e6469;
+  cursor: pointer;
 }
 .form-group input {
   padding: 1.5em 10em;  
   border: 2px solid #333;  
-  margin: 1em 0;
+  display: flex;
 }
+
+/*  ------------- footer ---------- */
