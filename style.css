@@ -333,3 +333,40 @@ nav li a {
 }
 
 /*  ------------- footer ---------- */
+
+footer {
+  background-color: #eee;
+  height: auto;
+  padding: 4em;
+  margin-top: 6em;
+}
+.footer-heading {
+  font-size: 1.5em;
+}
+.footer-description {
+  width: 90%;
+  line-height: 1.5;
+  margin-top: 1em;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav {
+  display: flex;
+}
+.links-block {
+  margin: 0 1em;
+}
+.links-block li {
+  margin: 1em 0;
+  list-style: none;
+}
+.links-block a {
+  color: #000;
+}
+.links-block a:hover {
+  color: #666;
+}
+
+
