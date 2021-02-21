@@ -15,21 +15,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 58em;
-  /* height: 100vh; */
+  /* height: 58em; */
+  height: calc(100vh - 64px);
   display: flex;
+  
 }
 
 /* -------header section------- */
 header {
-  height: 3em;
   width: 100%;
-  margin-bottom: 1em;
 }
-
 header .container {
-  display: flex;
   justify-content: space-between;
+}
+ .container {
+  display: flex;
   align-items: center;
   max-width: 1600px;
   margin: 0 auto;
@@ -49,10 +49,38 @@ header .container {
   width: 2em;
   padding: 0 .5em;
 }
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  overflow: hidden;
+  top: 100%;
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  transition: all 1s ease;
+  height: 0;
 
+}
+.dropdown:hover .dropdown-menu {
+  height: calc(60px * 4);
+}
+.dropdown-menu li {
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+}
+
+.dropdown-menu li:hover {
+  background: #eee;
+} 
 nav li {
-  display: inline-block;
-  margin: 0 1.5em;
+  display: inline-flex;
+  padding: 0 1.5em;
+  height: 64px;
+  line-height: 64px;
 }
 
 nav li a {
@@ -62,14 +90,13 @@ nav li a {
   font-weight: 600;
 }
 
-
 .intro-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   margin: 0 auto;
-  margin-bottom: 2.4em;
+  margin-bottom: 1.5em;
 }
 
 .intro-title h1 {
@@ -212,8 +239,6 @@ nav li a {
 .img-wrapper {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 
@@ -228,8 +253,8 @@ nav li a {
   position: absolute;
   /* background: rgba(29, 106, 154, 0.0);  */
   top: -100%;
-  opacity: 0;
-  transition: all ease 1s;
+  opacity: 1;
+  transition: all ease .5s;
   height: 100%;
   width: 100%;
   display: flex;
