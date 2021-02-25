@@ -16,7 +16,7 @@ body {
   background-size: cover;
   background-position: center;
   /* height: 58em; */
-  height: calc(100vh - 64px);
+  height: calc(100vh - 4em);
   display: flex;
   
 }
@@ -65,11 +65,11 @@ header .container {
 
 }
 .dropdown:hover .dropdown-menu {
-  height: calc(60px * 4);
+  height: calc(4em * 4);
 }
 .dropdown-menu li {
-  height: 60px;
-  line-height: 60px;
+  height: 4em;
+  line-height: 4em;
   width: 100%;
 }
 
@@ -79,8 +79,8 @@ header .container {
 nav li {
   display: inline-flex;
   padding: 0 1.5em;
-  height: 64px;
-  line-height: 64px;
+  height: 4em;
+  line-height: 4em;
 }
 
 nav li a {
@@ -370,3 +370,205 @@ footer {
 }
 
 
+/* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {...}
+
+ Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}
+
+ Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}
+
+ Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...} */
+
+
+
+/*  -------- media queries ------- */
+@media (max-width: 600px) {
+header .container {
+ justify-content: space-between;
+ display: flex;
+ flex-direction: column;
+ margin-top: 1.5em;
+}
+.nav-menu ul {
+  display: flex;
+}
+.intro-title h1 {
+  font-size: 3em;
+}
+nav li a {
+  font-size: 1.2em;
+}
+.intro-title p {
+  text-align: center;
+  font-size: 1.2em;
+}
+.text-wrapper {
+  padding: 0;
+}
+.text-wrapper p {
+  font-size: 1em
+}
+.text-wrapper h3 {
+  font-size: 1.5em;
+}
+.intro-section {
+  margin: 8em auto;
+}
+.genre-heading {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 2em;
+}
+.genre-wrapper {
+  display: block;
+}
+.game-genre {
+  margin: 3em;
+}
+.popular-games {
+  display: none;
+}
+.form-wrapper {
+  display: block;
+}
+.form-content {
+  width: 100%;
+}
+.form-wrapper {
+  margin: 10em 0 2em;
+}
+.form-title {
+  text-align: center;
+}
+.form-description {
+  line-height: 1.5;
+  padding: 1em;
+}
+.form-offer {
+  display: none;
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+}
+.footer-wrapper {
+  display: block;
+}
+.footer-heading {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+.footer-description {
+  line-height: 1.5;
+  padding: 1em;
+}
+.footer-nav {
+  display: flex;
+  margin: 1em 0;
+}
+footer {
+  padding: 2em;
+}
+}
+
+@media (max-width: 900px) {
+  header .container {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+   }
+   .nav-menu ul {
+     display: flex;
+   }
+   .intro-title h1 {
+     font-size: 3em;
+   }
+   nav li a {
+     font-size: 1.2em;
+   }
+   .intro-title p {
+     text-align: center;
+     font-size: 1.2em;
+     width: 80%;
+   }
+   .text-wrapper {
+     padding: 0;
+   }
+   .text-wrapper p {
+     font-size: 1em
+   }
+   .text-wrapper h3 {
+     font-size: 1.5em;
+   }
+   .intro-section {
+     margin: 8em auto;
+   }
+   .genre-heading {
+     text-align: center;
+     margin: 1em 0;
+     font-size: 2em;
+   }
+   .genre-wrapper {
+     display: block;
+   }
+   .game-genre {
+     margin: 3em;
+   }
+   .popular-games {
+     display: none;
+   }
+   .form-wrapper {
+     display: block;
+   }
+   .form-content {
+     width: 100%;
+   }
+   .form-wrapper {
+     margin: 10em 0 2em;
+   }
+   .form-title {
+     text-align: center;
+   }
+   .form-description {
+     line-height: 1.5;
+     padding: 1em;
+   }
+   .form-offer {
+     display: none;
+   }
+   .form-group {
+     display: flex;
+     justify-content: center;
+   }
+   .footer-wrapper {
+     display: block;
+   }
+   .footer-heading {
+     font-size: 2em;
+     font-weight: bold;
+     text-align: center;
+   }
+   .footer-description {
+     line-height: 1.5;
+     padding: 1em;
+   }
+   .footer-nav {
+     display: flex;
+     margin: 1em 0;
+     justify-content: center;
+   }
+   footer {
+     padding: 2em;
+   }
+   }
+  
+   @media (max-width: 1200px) {
+     .container {
+       max-width: 1600px;
+     }
+   }
